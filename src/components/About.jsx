@@ -13,7 +13,7 @@ function About() {
       <h1 className='text-indigo-600 font-semibold text-xl'>Skills and Expertise</h1>
       <p>Proficient in Python, Experience with Mysql,Git.Good problem solving skills.</p><br />
 
-      <h1 className='text-indigo-600 font-semibold text-xl'>Professional Experience</h1>
+       <h1 className='text-indigo-600 font-semibold text-xl'>Professional Experience</h1>
       <p>[job title],[Organization],[Year]</p><br />
 
       <h1 className='text-indigo-600 font-semibold text-xl'>Mission Statement</h1>

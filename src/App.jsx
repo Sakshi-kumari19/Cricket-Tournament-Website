@@ -1,23 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from './components/navbar'
 import Home from './components/Home'
 import About from './components/About'
-import Portfolio from './components/Portfolio'
 import Footer from './components/Footer'
-import Contacts from './components/Contacts'
+
 import { Toaster } from 'react-hot-toast'
+import Tournament from './components/Tournament'
+import Stepper from './components/Stepper'
+
+
+
 
 
 
 function App() {
+  
   return (
     <>
     <div>
     <Navbar/>
     <Home/>
     <About/>
-    <Portfolio/>
-    <Contacts/>
+    <Tournament/>
+    <Stepper/> 
     <Footer/>
     </div>
     <Toaster />

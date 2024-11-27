@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import pic from "../../public/women-web-developer-with-laptop-2040890-1721886.webp"
 import { AiOutlineMenu } from "react-icons/ai"
 import { IoCloseSharp } from "react-icons/io5"
 import {Link } from "react-scroll"
@@ -14,25 +13,24 @@ function Navbar() {
         },
         {
             id:2,
-            text:"About"
+            text:"About Us"
         },
         {
             id:3,
-            text:"Portfolio"
+            text:"Tournaments"
         },
         {
             id:4,
-            text:"Contacts"
+            text:"Register"
         }
         
     ]
   return (
-    <div className='max-w-screen-2xl container mx-auto px-4 md:px-20 h-16 shadow-md fixed top-0 left-0 right-0 bg-white'>
+    <div className='max-w-screen-2xl container pb-10 px-4 md:px-20 h-16 shadow-2xl fixed top-0 left-0 right-0  bg-slate-500 md:bg-black'>
         <div className='flex justify-between items-center h-16 '>
-            <div className='flex space-x-2'> 
-            <img src={pic} className='h-12 w-15'  /> 
-            <h1 className='font-semibold text-xl cursor-pointer'>Sakshi<span className='text-pink-700 text-xl'>K</span>
-            <p className='text-sm'>Web Developer</p>
+            <div className='flex  '> 
+            <h1 className='font-bold text-2xl cursor-pointer text-white text-justify pt-1'>XYZ
+            <p className='text-xs'>Organization</p>
             </h1>
             </div>
             {/* /desk nav bar */}
@@ -40,7 +38,7 @@ function Navbar() {
                 <ul className='hidden md:flex space-x-3 '>
                     {
                         navitems.map(({id,text}) =>(
-                            <li className='hover:scale-105 duration-200 cursor-pointer  ' keys={id}>
+                            <li className='hover:scale-105 duration-200 cursor-pointer text-white hover:text-yellow-400 ' keys={id}>
                                 <Link to={text} smooth={true} duration={500} offset={-70} activeClass="active">
                                 {text}
                                 </Link>
@@ -75,8 +73,9 @@ function Navbar() {
        )}
 
         
-     
+     <hr />
     </div>
+    
   )
 }
 
